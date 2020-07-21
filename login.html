@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="icon" type="image/x-ico" href="./pink.ico"/>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="./login.css">
+    <title>Login - Charlpha</title>
+  </head>
+  <body>
+    {% block body_block %}
+    <div class="card">
+      <div class="container" style="margin: 60px;">
+        <form>
+          <div class="form-group">
+
+            <label style="display: block; text-align:center;"><b style="color:rgb(247,109,89);">Please Login Using School Email and Password</b></label>
+            <hr style="background-color:rgb(247,109,89);">
+            <label for="exampleInputEmail1" style="color:rgb(247,109,89);">School Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1" style="color:rgb(247,109,89);">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1">
+          </div>
+          <div style="text-align: center;">
+            <button style="display: inline-block; color:rgb(255,255,255); background-color:rgb(247,109,89);)" type="submit" class="btn">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    {% block endblock %}
+
+  </body>
+</html>
