@@ -16,7 +16,7 @@ body {
   flex-direction: row;
   border-radius: 25px;
   position: relative;
-  width:500px; margin:300px auto;
+  width:500px; margin:200px auto;
   height:380px;
 }
 .card h2 {
