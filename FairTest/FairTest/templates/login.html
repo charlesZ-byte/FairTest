@@ -1,14 +1,13 @@
-<!DOCTYPE html>
+{% load static %}
 <html lang="en" dir="ltr">
   <head>
-    <link rel="icon" type="image/x-ico" href="./pink.ico"/>
+    <link rel="icon" type="image/x-ico" href="{% static 'pink.ico'%}"/>
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="./login.css">
+    <link rel="stylesheet" href="{% static 'login.css'%}">
     <title>Login - Charlpha</title>
   </head>
   <body>
-    {% block body_block %}
     <div class="card">
       <div class="container" style="margin: 60px;">
         <form>
@@ -29,7 +28,6 @@
         </form>
       </div>
     </div>
-    {% block endblock %}
 
   </body>
 </html>
