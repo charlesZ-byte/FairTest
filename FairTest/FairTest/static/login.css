@@ -45,4 +45,22 @@ path {
 
 
 
+#title{
+  display: inline;
+	position: relative;
+	font: 200px  Comic Sans MS, Comic Sans, cursive;
+  text-shadow: 0px 14px 80px rgb(254,225,203);
+	letter-spacing: 0px;
+	color: #fff;
+  font-size: 1000%;
+  margin:200px auto;
+  transition: 0.3s;
+}
+#title:after {
+	content: "FairTest";
+	position: absolute; left: 10px; top: 10px;
+	color: rgba(255,0,0,0.5);
+}
+#title:hover {
+	color: transparent;
 }
