@@ -13,9 +13,10 @@
 <body>
   {% block bodyBlock %}
   <a id="title" href="./login" style="text-decoration:none;">
-    <b>FairTest</b>
+    {% load static %}
+    <img src="{% static 'images/Logo.png' %}" width="900" height="auto">
   </a>
-  <h1 id="slogan">When the courses become online, we make your test fair.</h1>
+  <h2 id="slogan"><b>When the courses become online, we make your test fair.</b></h1>
   {% endblock %}
 </body>
 
