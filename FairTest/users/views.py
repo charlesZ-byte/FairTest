@@ -8,7 +8,7 @@ def loginAuth(request):
         password = request.POST.get('password')
         if User.objects.filter(email=email).exists():
             if User.objects.get(email = email).password == password:
-                return HttpResponse(json.dumps({'msg':'good email good password'}), content_type="application/json")
-            return HttpResponse(json.dumps({'msg':'good email bad password'}), content_type="application/json")
-        return HttpResponse(json.dumps({'msg':'bad email'}), content_type="application/json")
+                return HttpResponse(json.dumps({'msg':'You are logged in'}), content_type="application/json")
+            return HttpResponse(json.dumps({'msg':'The password you entered is not correct!'}), content_type="application/json")
+        return HttpResponse(json.dumps({'msg':'The email you entered is not registered with us!'}), content_type="application/json")
     return render(request, 'login.html')
