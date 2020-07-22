@@ -82,3 +82,12 @@ path {
 #title:hover {
   color: transparent;
 }
+
+#slogan{
+
+  font: Comic Sans MS, Comic Sans, cursive;
+  display: flex;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+}
